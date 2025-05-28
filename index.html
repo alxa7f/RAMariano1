@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Imagen y Video</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>Bienvenido a mi Pagina</h1>
+
+  <section>
+    <h2>Imagen</h2>
+    <img src="Leon RE4.jpg" alt="Descripción de la imagen">
+  </section>
+
+  <section>
+    <h2>Video de YouTube</h2>
+    <iframe src="https://www.youtube.com/embed/u9Dg-g7t2l4?si=gjZ2YwtdWio0QMvb" frameborder="0" allowfullscreen></iframe>
+  </section>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker registrado correctamente'))
+        .catch(error => console.error('Error al registrar Service Worker:', error));
+    }
+  </script>
+
+</body>
+</html>
