@@ -50,5 +50,12 @@ Una de las opiniones más repetidas sobre la versión original es que su sistema
     <h2>Gameplay RE4</h2>
     <iframe src="https://www.youtube.com/embed/l2SCwbZIKhQ?si=pLztKOw5DH2iERjl" frameborder="0" allowfullscreen></iframe>
   </section>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('Service Worker registrado correctamente'))
+        .catch(error => console.error('Error al registrar Service Worker:', error));
+    }
+  </script>
 </body>
 </html>
